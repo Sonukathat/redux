@@ -1,6 +1,10 @@
 import { FaShoppingCart } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 function Header() {
+
+    const selecter = useSelector((state)=>state.cart)
+
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-gray-900 text-white shadow-md">
       {/* Logo / Brand */}
