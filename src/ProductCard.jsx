@@ -11,7 +11,7 @@ function ProductCard() {
   return (
     <div className="bg-white shadow-lg rounded-2xl p-5 w-72 text-center hover:scale-105 transition-transform">
       <img
-        src="https://via.placeholder.com/200"
+        src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg"
         alt="Product"
         className="rounded-xl mb-4 mx-auto"
       />
