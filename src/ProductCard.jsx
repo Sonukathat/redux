@@ -11,7 +11,7 @@ function ProductCard() {
       <p className="text-lg font-bold mb-4">₹999</p>
 
       <button
-        
+        // onClick={alert("cghnjm,")}
         className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg"
       >
         Add to Cart
