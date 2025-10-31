@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux";
-import { addItem } from "./redux/slice";  // ✅ Correct import (named import)
+import { addItem } from "./redux/slice";
 
 function ProductCard() {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addItem());  // ✅ Correct action dispatch
+    dispatch(addItem()); 
   };
 
   return (
