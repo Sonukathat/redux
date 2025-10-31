@@ -1,12 +1,14 @@
 import { useDispatch } from "react-redux";
-import addItem from './redux/slice'
+import { addItem } from "./redux/slice";  // ✅ Correct import (named import)
 
 function ProductCard() {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
+  const handleAddToCart = () => {
+    dispatch(addItem());  // ✅ Correct action dispatch
+  };
 
   return (
-    
     <div className="bg-white shadow-lg rounded-2xl p-5 w-72 text-center hover:scale-105 transition-transform">
       <img
         src="https://via.placeholder.com/200"
@@ -18,7 +20,7 @@ function ProductCard() {
       <p className="text-lg font-bold mb-4">₹999</p>
 
       <button
-        onClick={()=>dispatch(addItem(1))}
+        onClick={handleAddToCart}
         className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg"
       >
         Add to Cart
