@@ -1,8 +1,9 @@
+import Header from "./Header"
 
 function App() {
   return (
       <>
-        <h1>redux</h1>
+        <Header/>
       </>
   )
 }
